@@ -30,11 +30,10 @@ daysuntil() {
 	echo $((($(date +%s --date $1)-$(date +%s))/(3600*24))) days
 }
 
-#alias ssh="kitten ssh"
+alias c="chezmoi edit --apply"
 alias ls="ls --color"
 alias s="ssh cob@ssh.kittycob.dev -p 9000"
-alias z="nvim ~/.zshrc"
-alias h="nvim ~/.config/hypr/hyprland.conf"
-alias cp="cp -v"
+alias z="c ~/.zshrc"
+alias h="c ~/.config/hypr/hyprland.conf"
 
 export MANPAGER="nvim +Man!"
