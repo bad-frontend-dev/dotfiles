@@ -19,10 +19,6 @@ HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
 
-if uwsm check may-start && uwsm select; then
-	exec systemd-cat -t uwsm_start uwsm start hyprland
-fi
-
 bindkey "^[[1;3C" forward-word
 bindkey "^[[1;3D" backward-word
 bindkey "^[[1;5C" forward-word
