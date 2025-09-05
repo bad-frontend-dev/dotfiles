@@ -1,0 +1,20 @@
+{
+  "layer": "top",
+  "height": 30,
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["hyprland/window"],
+  "modules-right": ["hyprland/language", "wireplumber", "battery", "clock"],
+  "hyprland/window": {
+    "max-length": 50
+  },
+  "clock": {
+    "interval": 1,
+    "format": "{:%x %r}"
+  },
+  "wireplumber": {
+    "format": "{volume}%"
+  },
+  "sway/language": {
+    "format": "{}"
+  }
+}
